@@ -1,5 +1,5 @@
 {
-    "name": "test/plugin",
+    "name": "devasyadave/plugin",
     "description": "Provides functionality to plugin",
     "keywords": ["environment","hhvm","xdebug"],
     "homepage": "https://www.google.com",
