@@ -1,13 +1,13 @@
 {
-    "name": "miniorange/sso",
-    "description": "Provides functionality to SSO",
+    "name": "test/plugin",
+    "description": "Provides functionality to plugin",
     "keywords": ["environment","hhvm","xdebug"],
-    "homepage": "http://www.github.com/sebastianbergmann/environment",
+    "homepage": "https://www.google.com",
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "miniOrange",
-            "email": "devasya@miniorange.com"
+            "name": "devasyadave",
+            "email": "devasyadave@gmail.com"
         }
     ],
     "config": {
