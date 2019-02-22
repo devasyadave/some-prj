@@ -1,0 +1,41 @@
+{
+    "name": "miniorange/sso",
+    "description": "Provides functionality to SSO",
+    "keywords": ["environment","hhvm","xdebug"],
+    "homepage": "http://www.github.com/sebastianbergmann/environment",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "miniOrange",
+            "email": "devasya@miniorange.com"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "suggest": {
+        "ext-posix": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "miniorange\\sso\\": "src/"
+        }
+        
+    },
+    "extra": {
+        "laravel":{
+        	"providers": [
+        		"miniorange\\sso\\ssoServiceProvider"]
+        	}
+        },
+    "minimum-stability": "dev"
+    }
+}
