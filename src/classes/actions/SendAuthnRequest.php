@@ -1,6 +1,6 @@
 <?php
 
-namespace MiniOrange\Classes\Actions;
+//namespace MiniOrange\Classes\Actions;
 
 
 use MiniOrange\Classes\AuthnRequest;

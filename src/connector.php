@@ -1,7 +1,12 @@
 <?php
+namespace miniorange\sso;
+use miniorange\sso\helper\DB;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
-echo '
-<!-- Essential javascripts for application to work-->
+class Connector extends Controller {
+    public function main() {
+echo '<!-- Essential javascripts for application to work-->
 <script src="includes/js/jquery-3.2.1.min.js"></script>
 <script src="includes/js/popper.min.js"></script>
 <script src="includes/js/bootstrap.min.js"></script>
@@ -9,6 +14,7 @@ echo '
 <!-- The javascript plugin to display page loading on top-->
 <script src="includes/js/plugins/pace.min.js"></script>
 ';
+
 
 if(!class_exists("DB")){
     require_once dirname(__FILE__) . '/helper/DB.php';
@@ -305,7 +311,7 @@ if(isset($_POST['option']) && $_POST['option'] == 'save_endpoint_url'){
     DB::update_option('mo_saml_message', 'Endpoint URLs saved successfully.');
     mo_saml_show_success_message();
 }
-
+}
 function mo_register_action(){
 
     // $user = wp_get_current_user();
@@ -849,6 +855,6 @@ function is_user_registered(){
     $certificate = "-----BEGIN CERTIFICATE-----\r\n" . $certificate . "-----END CERTIFICATE-----";
     return $certificate;
 }
-
+}
 
 ?>

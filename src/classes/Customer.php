@@ -1,8 +1,13 @@
 <?php
-if(!class_exists("DB")){
+namespace miniorange\sso\classes;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
+use miniorange\sso\DB;
+
+/*if(!class_exists("DB")){
     require_once dirname(__FILE__) . '/helper/DB.php';
-}
-    class CustomerSaml{
+}*/
+    class Customer extends Controller{
         public $email;
         
 

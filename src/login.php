@@ -1,15 +1,19 @@
 <?php
 
-namespace MiniOrange;
+namespace miniorange\sso;
 
-use MiniOrange\Classes\Actions\SendAuthnRequest;
+//use MiniOrange\Classes\Actions\SendAuthnRequest;
 use MiniOrange\Helper\Utilities;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 
-include_once 'autoload.php';
+use SendAuthnRequest;
 
-final class Login
+//include_once 'autoload.php';
+
+class Login extends Controller
 {
-    public function __construct()
+    public function index()
     {   
 
         try {
@@ -19,4 +23,3 @@ final class Login
         }
     }
 }
-new Login();

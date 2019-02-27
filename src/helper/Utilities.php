@@ -1,7 +1,6 @@
 <?php
 
-    namespace MiniOrange\Helper;
-
+namespace miniorange\sso\helper;
     use Exception;
     use MiniOrange\Helper\Exception\NotRegisteredException;
 

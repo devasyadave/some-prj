@@ -1,7 +1,6 @@
 <?php
 
-namespace  MiniOrange\Helper;
-
+namespace miniorange\sso\helper;
 use MiniOrange\Helper\Utilities;
 /**
  * This class contains some constant variables to be used

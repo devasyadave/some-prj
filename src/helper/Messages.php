@@ -1,7 +1,6 @@
 <?php
 
-namespace MiniOrange\Helper;
-
+namespace miniorange\sso\helper;
 /**
  * This class lists down all of our messages to be shown to the admin or
  * in the frontend. This is a constant file listing down all of our 

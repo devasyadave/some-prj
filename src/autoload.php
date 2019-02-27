@@ -1,5 +1,4 @@
 <?php
-
 /** Some common constant variables to be used throughout the plugin */
 define('MSSP_VERSION', '1.0.0');
 define('MSSP_NAME', basename(__DIR__));
@@ -11,13 +10,17 @@ define('MSSP_TEST_MODE', FALSE);
  * plugin. Removes the pain of individually including all files. This class
  * loads the files only as the need arises.
  */
-class SplClassLoader
+class autoload 
 {
     private $_fileExtension = '.php';
     private $_namespace;
     private $_includePath;
     private $_namespaceSeparator = '\\';
 
+    public function index()
+    {
+        return;
+    }
     public function __construct($ns = null, $includePath = null)
     {
         $this->_namespace = $ns;
@@ -63,5 +66,5 @@ class SplClassLoader
     }
 }
 
-$idpClassLoader = new SplClassLoader('MiniOrange', realpath(__DIR__ . DIRECTORY_SEPARATOR . ".."));
+$idpClassLoader = new autoload('MiniOrange', realpath(__DIR__ . DIRECTORY_SEPARATOR . ".."));
 $idpClassLoader->register();

@@ -1,4 +1,5 @@
 <?php
+namespace miniorange\sso\helper;
 
 class DB {
     // private static $db_file_path = dirname(__FILE__) . '\helper\data\options.json';
